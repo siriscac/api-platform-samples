@@ -9,8 +9,7 @@ Verifies that requests carry the client app's unique identifier, an API key. Ver
 * In the proxy code, the API key check is done by a Verify API Key policy. The policy is configured in [VerifyApiKey.xml](https://github.com/apigee/api-platform-samples/blob/master/edge-ux/basic-apikey-security/apiproxy/policies/VerifyApiKey.xml):
 
     ```
-    <VerifyAPIKey name="VerifyAPIKey">
-       <!-- This policy checks the query param "apikey" against the Consumer Keys in all the Developer Apps defined in our organization.-->
+    <VerifyAPIKey name="VerifyAPIKey"><!-- This policy checks the query param "apikey" against the Consumer Keys in all the Developer Apps defined in our organization.-->
        <APIKey ref="request.queryparam.apikey"/>
     </VerifyAPIKey>
     ```
