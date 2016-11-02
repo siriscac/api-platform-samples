@@ -10,8 +10,8 @@ Verifies that requests carry the client app's unique identifier, an API key. Ver
 
     ```xml
     <VerifyAPIKey name="VerifyAPIKey">
-      <!-- This policy checks the query param "apikey" against the Consumer Keys in all the Developer Apps defined in our organization.-->
-        <APIKey ref="request.queryparam.apikey"/>
+       <!-- This policy checks the query param "apikey" against the Consumer Keys in all the Developer Apps defined in our organization.-->
+       <APIKey ref="request.queryparam.apikey"/>
     </VerifyAPIKey>
     ```
 
